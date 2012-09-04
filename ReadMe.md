@@ -1,10 +1,9 @@
-
 # nuxeo-license-management
 
 ## Why this module
 
 Although Nuxeo Platform is purely opensource and ditributed under LGPL Licenses, some people build commercial products on top of it and then may need to manage software licenses associated with usage restriction.
-This module is a skeleton / sample that shows how a License managament service could be built and plugged inside Nuxeo infrastructure.
+This module is a skeleton / sample that shows how a License management service could be built and plugged inside Nuxeo infrastructure.
 
 ## Infrastructure integration
 
@@ -18,7 +17,7 @@ So far the infrastructure plugs are :
 
  - Periodic check : check Licenses status on a priodic basis and possibly stop the server if needed
 
- - Global expiration message : display a expiration message on all pages if liceses are about to expire
+ - Global expiration message : display a expiration message on all pages if licenses are about to expire
 
  - Admin center : add a new entry in admin center to manage the licenses
 
@@ -28,10 +27,10 @@ This code is just a sample, by definition, Nuxeo people (or at least me) are not
 
 In addition keep in mind that your propietary code needs to include :
 
- - a check that the license manager service is indeed deployed (just add a <require> in your deployment-fragement)
+ - a check that the license manager service is indeed deployed (just add a <require> in your deployment-fragment)
 
  - a check that implementation of the service is the Genuine one :)
-   ( you can do a check on the underlying NXRuntime Component class for that)
+   (you can do a check on the underlying NXRuntime Component class for that)
 
 ## Additional notes
 
